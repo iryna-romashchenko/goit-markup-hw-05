@@ -50,7 +50,15 @@
         <section class="order">
             <!-- <div class="container"> -->
             <h1 class="order-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="order-button button">Заказать услугу</button>
+            <button type="button" class="order-button button"  data-modal-open>Заказать услугу</button>
+            <div class="backdrop is-hidden" data-model>
+                <div class="modal">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aut sapiente mollitia illo repudiandae ratione totam, dignissimos amet rem voluptatibus, dolor dicta numquam odit vero neque nihil autem dolores veritatis.
+                    </p>
+                    <button data-modal-close>Close</button>
+                </div>
+            </div>
             <!-- </div> -->
         </section>
 
@@ -108,12 +116,30 @@
             <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="works-list">
-                    <li class="work"><img src="./images/activity1.jpg" alt="programer working his desk office"
-                            width="370"></li>
-                    <li class="work"><img src="./images/activity2.jpg"
+                    <li class="work">
+                        <div class="work-thumb">
+                        <img src="./images/activity1.jpg" alt="programer working his desk office" width="370">
+                        <div class="work-item">
+                            <h2 class="work-item-title">Десктопные приложения</h2>
+                        </div>
+                        </div>                       
+                        </li>
+                    <li class="work">
+                        <div class="work-thumb">
+                        <img src="./images/activity2.jpg"
                             alt="team creator is working interface mobile phones" width="370">
+                            <div class="work-item">
+                                <h2 class="work-item-title">Мобильные приложения</h2>
+                            </div>
+                            </div>
                     </li>
-                    <li class="work"><img src="./images/activity3.jpg" alt="designer is working on tablet" width="370">
+                    <li class="work">
+                        <div class="work-thumb">
+                        <img src="./images/activity3.jpg" alt="designer is working on tablet" width="370">
+                        <div class="work-item">
+                            <h2 class="work-item-title">Дизайнерские решения</h2>
+                        </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -394,7 +420,7 @@
             </div>
         </section>
     </footer>
-    <script src="./js/modal.js">
+    <script src="./modal.js">
         
     </script>
 </body>
