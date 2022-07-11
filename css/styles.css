@@ -7,7 +7,7 @@
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --accent-color: #2196F3;
+    --accent-color: rgb(33, 150, 243);
     --primary-white-color: #FFFFFF;
     --button-color: #F5F4FA;
     --secondary-white-color: rgba(255, 255, 255, 0.6);
@@ -294,8 +294,9 @@ font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-margin-top: 27px;
-margin-bottom: 27px;
+padding-top: 27px;
+padding-bottom: 27px;
+margin: 0;
 }
 
 
@@ -521,6 +522,28 @@ fill: var(--accent-color);
     margin-top: 0;
 }
 
+.sample-thumb{
+    position: relative;
+    
+}
+
+.sample-thumb::before{
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 1);
+    opacity: 0;
+}
+
+.sample-thumb:hover::before{
+    opacity: 0.9;
+}
+
+.sample-overlay{
+    
+}
 
 .samples:hover,
 .samples:focus {
@@ -731,6 +754,7 @@ fill: var(--accent-color);
     fill: var(--primary-white-color);
     background-color: var(--accent-color);
     border-radius: 50%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 
 .container {
