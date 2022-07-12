@@ -236,11 +236,19 @@ ul {
     height: 30px;
     background-color: var(--primary-white-color);
     border-radius: 50%;
-    border: 1px solid #000000;
+    color: var(--primary-text-color);
+    fill: #2196F3;
 }
-.close-icon{
+.close-button{
     fill: var(--primary-white-color);
     color: var(--primary-text-color);
+    width: 30px;
+    height: 30px;
+}
+
+.close-icon{
+    width: 30px;
+    stroke: var(--primary-text-color);
 }
 
 
