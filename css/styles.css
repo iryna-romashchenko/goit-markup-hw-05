@@ -74,6 +74,9 @@ ul {
 }
 
 .site-nav .link {
+    padding-top: 32px ;
+    padding-bottom: 32px;
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -89,7 +92,9 @@ ul {
 }
 
 .link.current::after {
-    position:relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     content: "";
     display: inline-block;
     width: 100%;
@@ -237,7 +242,6 @@ ul {
     background-color: var(--primary-white-color);
     border-radius: 50%;
     color: var(--primary-text-color);
-    fill: #2196F3;
 }
 .close-button{
     fill: var(--primary-white-color);
@@ -249,6 +253,7 @@ ul {
 .close-icon{
     width: 30px;
     stroke: var(--primary-text-color);
+    cursor: pointer;
 }
 
 
@@ -317,6 +322,10 @@ ul {
 
 .work-thumb{
     position:relative;
+}
+
+.work-sample{
+    display: block;
 }
 
 .work-item{
